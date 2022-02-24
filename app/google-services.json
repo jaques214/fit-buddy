@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "514527602613",
+    "project_id": "fitbuddy-grupo20",
+    "storage_bucket": "fitbuddy-grupo20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514527602613:android:36382bd31b00a68aee9bfc",
+        "android_client_info": {
+          "package_name": "pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514527602613-bpkb6siojumrpaju427sg9toelbqqsou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20",
+            "certificate_hash": "880209b31ccfd7b1759dce37de501f961b65494a"
+          }
+        },
+        {
+          "client_id": "514527602613-kshmj8sbha1o4t9rah6tv365bva372vs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPWwQ3NuyCKKMeYzFmvRNjG9boZ6tuKNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514527602613-kshmj8sbha1o4t9rah6tv365bva372vs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
