@@ -2,26 +2,15 @@ package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.fragments;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.here.sdk.core.GeoCoordinates;
-import com.here.sdk.mapview.MapError;
-import com.here.sdk.mapview.MapScene;
-import com.here.sdk.mapview.MapScheme;
-import com.here.sdk.mapview.MapView;
-
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.MapActivity;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.R;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.retrofit.ImageLoadTask;

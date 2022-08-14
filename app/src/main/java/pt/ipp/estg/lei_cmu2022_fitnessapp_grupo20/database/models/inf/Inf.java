@@ -1,13 +1,8 @@
-package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Inf;
+package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.inf;
 
 import androidx.room.*;
-import androidx.room.Entity;
-
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
-
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.User.User;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.user.User;
 
 @Entity(foreignKeys = @ForeignKey(entity = User.class, parentColumns = "id", childColumns = "userId"))
 public class Inf {

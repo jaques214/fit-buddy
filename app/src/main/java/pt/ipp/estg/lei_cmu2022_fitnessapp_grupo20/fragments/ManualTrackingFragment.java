@@ -13,28 +13,19 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Chronometer;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.RemoteViews;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -45,13 +36,12 @@ import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.Target;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.AccessControl;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.MainFragmentsActivity;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.R;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.SharedViewModel;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.History.History;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.User.User;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.history.History;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.user.User;
 
 public class ManualTrackingFragment extends Fragment {
 
@@ -158,8 +148,9 @@ public class ManualTrackingFragment extends Fragment {
                                 try {
                                     Thread.sleep(200);
                                 } catch (Exception err) {
+                                    System.err.println("Exception: " + err.getMessage());
                                 }
-                                if (start == true) {
+                                if (start) {
                                     if ((resource).isRunning()) {
                                         (resource).stop();
                                     }

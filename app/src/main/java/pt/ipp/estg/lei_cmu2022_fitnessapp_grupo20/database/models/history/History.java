@@ -1,12 +1,10 @@
-package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.History;
+package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.history;
 
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
-
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Exercise.Exercise;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.User.User;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.user.User;
 
 @Entity(foreignKeys = {@ForeignKey(entity = User.class,
         parentColumns = "id", childColumns = "userId", onDelete = ForeignKey.CASCADE)},

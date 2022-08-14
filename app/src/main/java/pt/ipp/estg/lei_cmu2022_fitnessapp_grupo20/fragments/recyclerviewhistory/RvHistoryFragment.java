@@ -1,33 +1,22 @@
 package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.fragments.recyclerviewhistory;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.google.firebase.auth.FirebaseAuth;
-
 import java.util.List;
-
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.MainFragmentsActivity;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.R;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.SharedViewModel;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Exercise.Exercise;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.History.History;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.User.User;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.fragments.recyclerviews.ExerciseAdapter;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.history.History;
 
 /**
  * A simple {@link Fragment} subclass.

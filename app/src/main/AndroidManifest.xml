@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
@@ -16,17 +16,18 @@
         android:roundIcon="@mipmap/ic_icon_app"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cmu_fitnessapp_g20"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules">
         <activity
             android:name=".MainFragmentsActivity"
             android:exported="false" />
         <!-- Set your credentials for the HERE SDK. -->
         <meta-data
             android:name="com.here.sdk.access_key_id"
-            android:value="njcEUO87uOnG3GzCJRjSNA" />
+            android:value="${ACCESS_KEY_ID}" />
         <meta-data
             android:name="com.here.sdk.access_key_secret"
-            android:value="K5-dEmXLvaw8WrBUNKRShh2zcCgG96D3atvE2OCsd9foEzOSm_LATgQ8wB0nLDtE3HNiTnqlFqcLSptqOHlreA" />
+            android:value="${ACCESS_KEY_SECRET}"/>
 
         <activity
             android:name=".AccessControl"

@@ -1,10 +1,8 @@
-package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.User;
+package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.user;
 
 import androidx.room.*;
 
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Enumerations.LevelEnum;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Enumerations.StateEnum;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Inf.Inf;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.inf.Inf;
 
 @Entity(foreignKeys = {@ForeignKey(entity = Inf.class, parentColumns = "id", childColumns = "goalId")}, indices = {
         @Index(value = {"goalId"})})

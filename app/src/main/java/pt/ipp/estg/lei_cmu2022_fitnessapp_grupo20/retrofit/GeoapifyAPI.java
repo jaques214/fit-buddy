@@ -1,7 +1,5 @@
 package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.retrofit;
 
-import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

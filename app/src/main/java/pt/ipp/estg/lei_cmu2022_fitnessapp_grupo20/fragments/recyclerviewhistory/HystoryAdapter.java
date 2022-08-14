@@ -4,20 +4,13 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.lifecycle.LiveData;
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.List;
-
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.R;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Exercise.Exercise;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.History.History;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.fragments.recyclerviews.ExerciseAdapter;
-
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.history.History;
 
 public class HystoryAdapter extends RecyclerView.Adapter<HystoryAdapter.HistoryViewHolder>{
     private Context context;
@@ -28,12 +21,13 @@ public class HystoryAdapter extends RecyclerView.Adapter<HystoryAdapter.HistoryV
         this.historyExercises = historyExercises;
     }
 
+    @NonNull
     @Override
     public HistoryViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
         View historyView = inflater.inflate(R.layout.item_history, parent, false);
-        HistoryViewHolder holder = new HistoryViewHolder(historyView) ;
+        HistoryViewHolder holder = new HistoryViewHolder(historyView);
 
         return holder;
     }
@@ -79,7 +73,7 @@ public class HystoryAdapter extends RecyclerView.Adapter<HystoryAdapter.HistoryV
         this.historyExercises = exList;
     }
 
-    public class HistoryViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public static class HistoryViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView nameText;
         public TextView durationText;
         public TextView caloriesText;

@@ -31,7 +31,7 @@ import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.AccessControl;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.MainFragmentsActivity;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.R;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.SharedViewModel;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.User.User;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.user.User;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.threads.UpdateLevelThread;
 
 public class ProfileFragment extends Fragment {

@@ -1,9 +1,7 @@
-package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Exercise;
+package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.exercise;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Enumerations.Category;
 
 @Entity
 public class Exercise {

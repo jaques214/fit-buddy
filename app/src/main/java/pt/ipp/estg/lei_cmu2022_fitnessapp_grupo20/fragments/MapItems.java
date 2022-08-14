@@ -56,8 +56,8 @@ import java.util.Locale;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.MapActivity;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.R;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.SharedViewModel;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.FavouritePlaces.FavouritePlaces;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.User.User;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.favouritePlaces.FavouritePlaces;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.user.User;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.threads.DbAddFavouritePlacesThread;
 
 public class MapItems {

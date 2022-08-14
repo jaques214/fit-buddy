@@ -15,14 +15,14 @@
     <string name="create_btn">Create Account</string>
     <string name="login_btn">Login</string>
     <string name="message_details">Already have an account? Sign in</string>
-    <string name="description"></string>
+    <string name="description"/>
     <string name="exercise_manual">Stretch</string>
     <string name="exercise_automatic">Free Run</string>
     <string name="button_stop_tracking_manual">Stop</string>
     <string name="button_go_tracking_manual">Start stretching!</string>
     <string name="humidity_label">Humidity:</string>
     <string name="stop_chrono">Stop</string>
-    <string name="total"></string>
+    <string name="total"/>
     <string name="search_map">Search Route</string>
     <string name="area">Your Area</string>
     <string name="profile">Your Profile</string>

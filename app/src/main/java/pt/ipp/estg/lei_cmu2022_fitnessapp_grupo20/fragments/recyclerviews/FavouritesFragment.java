@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LiveData;
@@ -13,24 +12,17 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-
 import java.util.List;
-
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.AccessControl;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.MainFragmentsActivity;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.MapActivity;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.R;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.RecyclerViewAdapter;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.SharedViewModel;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.FavouritePlaces.FavouritePlaces;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.favouritePlaces.FavouritePlaces;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -82,20 +74,17 @@ public class FavouritesFragment extends Fragment {
         sh = new ViewModelProvider((MainFragmentsActivity)main).get(SharedViewModel.class);
         LiveData<List<FavouritePlaces>> places = sh.getFavouritePlaces();;
 
-        places.observe((MainFragmentsActivity)main, new Observer<List<FavouritePlaces>>() {
-            @Override
-            public void onChanged(List<FavouritePlaces> places) {
-                RecyclerView mRecyclerView = vf.findViewById(R.id.mRecyclerView);
+        places.observe((MainFragmentsActivity)main, places1 -> {
+            RecyclerView mRecyclerView = vf.findViewById(R.id.mRecyclerView);
 
-                RecyclerViewAdapter adapter = new RecyclerViewAdapter(main, places);
-                mRecyclerView.setAdapter(adapter);
-                mRecyclerView.setLayoutManager(new LinearLayoutManager(main));
+            RecyclerViewAdapter adapter = new RecyclerViewAdapter(main, places1);
+            mRecyclerView.setAdapter(adapter);
+            mRecyclerView.setLayoutManager(new LinearLayoutManager(main));
 
-                RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(main, DividerItemDecoration.VERTICAL);
+            RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(main, DividerItemDecoration.VERTICAL);
 
-                mRecyclerView.addItemDecoration(itemDecoration);
-                adapter.notifyDataSetChanged();
-            }
+            mRecyclerView.addItemDecoration(itemDecoration);
+            adapter.notifyDataSetChanged();
         });
 
 

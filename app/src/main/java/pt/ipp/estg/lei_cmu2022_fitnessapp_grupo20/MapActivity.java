@@ -184,7 +184,7 @@ public class MapActivity extends AppCompatActivity implements WeatherFragment.Fr
                         }
                     }
                 });
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, items);
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_dropdown_item, items);
                 textView.setAdapter(adapter);
             }
 

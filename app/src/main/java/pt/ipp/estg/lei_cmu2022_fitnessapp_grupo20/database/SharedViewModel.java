@@ -1,26 +1,20 @@
 package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database;
 
 import android.app.Application;
-
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-
 import java.util.List;
-
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Exercise.Exercise;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.FavouritePlaces.FavouritePlaces;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.History.History;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Inf.Inf;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Plan.Plan;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.PlanExercise.PlanExercise;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.User.User;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.UserPlace.UserPlace;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.exercise.Exercise;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.favouritePlaces.FavouritePlaces;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.history.History;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.inf.Inf;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.plan.Plan;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.planExercise.PlanExercise;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.user.User;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.userPlace.UserPlace;
 
 public class SharedViewModel extends AndroidViewModel {
-
     private Repository repository;
-
     private LiveData<List<User>> users;
     private LiveData<List<PlanExercise>> planExercises;
     private LiveData<List<UserPlace>> userPlaces;

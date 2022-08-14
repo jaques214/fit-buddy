@@ -4,39 +4,30 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
-
 import java.util.List;
-
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.AccessControl;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.MainFragmentsActivity;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.R;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.SharedViewModel;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.Exercise.Exercise;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.User.User;
+import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.exercise.Exercise;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.fragments.recyclerviewhistory.RvHistoryFragment;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.fragments.recyclerviews.ExerciseAdapter;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.fragments.recyclerviews.FavouritesFragment;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.fragments.recyclerviews.RvExerciseFragment;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.fragments.recyclerviews.UserFavouritesFragment;
 import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.threads.DbAddExerciseThread;
-import pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.threads.DbAddUserThread;
 
 public class MainPageFragment extends Fragment {
     private Activity main;

@@ -1,4 +1,4 @@
-package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.History;
+package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.history;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;

@@ -16,14 +16,14 @@
     <string name="create_btn">Criar conta</string>
     <string name="login_btn">Iniciar sessão</string>
     <string name="message_details">Já tem conta? Efetue o Login</string>
-    <string name="description"></string>
+    <string name="description"/>
     <string name="exercise_manual">Alongamento</string>
     <string name="exercise_automatic">Corrida livre</string>
     <string name="button_stop_tracking_manual">Stop</string>
     <string name="button_go_tracking_manual">Comece a alongar!</string>
     <string name="humidity_label">Humidade:</string>
     <string name="stop_chrono">Parar</string>
-    <string name="total"></string>
+    <string name="total"/>
     <string name="search_map">Pesquise rota</string>
     <string name="area">A tua área</string>
     <string name="profile">O teu perfil</string>

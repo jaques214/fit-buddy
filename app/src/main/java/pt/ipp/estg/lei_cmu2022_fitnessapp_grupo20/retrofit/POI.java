@@ -1,7 +1,5 @@
 package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.retrofit;
 
-import com.google.gson.annotations.SerializedName;
-
 public class POI {
     private String type;
     private Properties properties;

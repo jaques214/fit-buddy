@@ -1,4 +1,4 @@
-package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.FavouritePlaces;
+package pt.ipp.estg.lei_cmu2022_fitnessapp_grupo20.database.models.favouritePlaces;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
